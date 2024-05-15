@@ -1,13 +1,135 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.8em;
+  font-family: sans-serif;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: rgb(16, 3, 3);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.main-container {
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.left-container {
+  width: 75%;
+  padding: 20px;
+  background-color: #2a2ca4;
+  color: white;
+  box-shadow: 2px 0 5px rgba(21, 41, 173, 0.1);
+  
+}
+
+.left-container ul {
+  list-style: none;
+}
+
+.left-container li {
+  padding: 15px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.left-container li:hover {
+  background-color: rgba(39, 64, 210, 0.4);
+  
+}
+
+.left-container li.selected {
+  background-color: white;
+  color: #2a34c4;
+  font-weight: bold;
+}
+
+.converter {
+  margin-top: 10px;
+  width: 100%; 
+  padding: 20px;
+}
+
+.converter h2 {
+  margin-bottom: 10px; 
+}
+
+#box,
+.wrapper {
+  margin-top: 20px; 
+}
+
+
+#box, .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#box input, .wrapper input, #box select, .wrapper select {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 150px;
+}
+
+#convertButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+ 
+}
+
+#convertButton:hover {
+  background-color: #0056b3;
+}
+
+.center {
+  margin-top: 20px;
 }
